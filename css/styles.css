@@ -1,8 +1,8 @@
 /*-----------------------------------------------------------------------Global style*/
 body {
-  background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  color: #434455;
+  background-color: #c4ca14;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 a {
   text-decoration: none;
@@ -26,6 +26,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .container {
@@ -37,4 +38,68 @@ img {
 }
 input {
   font-family: inherit;
+}
+button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------------------------------------------------------Start-page*/
+.title-game {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.title-game::before,
+.title-game::after {
+  content: '';
+  display: block;
+  background-color: black;
+  width: 50px;
+  height: 3px;
+  transform: translateY(-50%);
+}
+.start-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.list-teme {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.choice-teme {
+  flex-basis: calc((100% - 30px) / 3);
+  height: 150px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  box-shadow: inset 0 0 10px #fcf405;
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+.choice-teme:hover,
+.choice-teme:focus {
+  transform: scale(1.02);
+  box-shadow: inset 0 0 15px #fac70f;
 }
